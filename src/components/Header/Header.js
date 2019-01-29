@@ -11,7 +11,7 @@ class Header extends Component{
         return (
             <header className="header">
                 <Link to="/">
-                    <h1>Jedi Films</h1>
+                    <h1>Jedi Films Searcher</h1>
                 </Link>
             </header>
         )

@@ -14,7 +14,7 @@ class Home extends Component{
                 <main className="home">
                     <article className="home__intro">
                         <p>
-                            Jedi Films é um site feito para fãs de StarWars que querem saber informações completas sobre seu episódio favorito. E é muito fácil, se liga!
+                            Jedi Films Searcher é um site feito para fãs de StarWars que querem saber informações completas sobre seu episódio favorito. E é muito fácil, se liga!
                         </p>
                     </article>
                     <section className="home__steps">
