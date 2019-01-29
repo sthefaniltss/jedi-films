@@ -1,0 +1,23 @@
+.search-field {
+    font-size: 1rem;
+    font-family: 'Pathway Gothic One', sans-serif;
+    color: black;
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    padding: 0.3rem 2rem;
+    margin: 0 0 1rem;
+    border: 1px solid white;
+    border-radius: 5px;
+    background: white;
+}
+
+.search-field:focus {
+    outline: none;
+    border-color: white;
+    box-shadow: 0 0 2px white;
+}
+.search-field::placeholder{
+    color: black;
+    text-align: center;
+}

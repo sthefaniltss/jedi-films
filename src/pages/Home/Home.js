@@ -1,5 +1,6 @@
 import React,  { Component }  from 'react';
 import Header from '../../components/Header/Header';
+import SearchField from '../../components/SearchField/SearchField';
 import './Home.css';
 
 class Home extends Component{
@@ -21,6 +22,7 @@ class Home extends Component{
                         <p>
                             É só digitar o título do seu episódio favorito (em inglês) nessa barra:
                         </p>
+                        <SearchField placeholder="Ex: a new hope"/>
                         <p>
                             Ps: Ou você pode tentar usar a força...
                         </p>
