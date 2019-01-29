@@ -1,0 +1,26 @@
+h1{
+    font-family: 'Star Jedi', arial;
+    font-size: 6em;
+    text-shadow: 4px 4px 4px rgb(54, 54, 54);
+    text-transform: uppercase;
+    margin: 8px;
+    color: #f5e610;
+}
+*:link{
+    text-decoration: none!important;
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 60px;
+    padding: 30px 1rem;
+    background: #000000;
+    
+}
+
+@media (min-width: 992px) {
+    .header {
+        padding: 30px 10%;
+    }
+}

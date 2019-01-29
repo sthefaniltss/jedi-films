@@ -1,0 +1,29 @@
+.home{
+    background: black;
+    height: 100vh;
+    font-family: 'Pathway Gothic One', sans-serif;
+}
+.home__intro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 130px 1rem;
+    overflow: hidden;
+}
+.home__intro p{
+    margin: 0;
+    color: white;
+    font-size: 1.8em;
+    width: 80%;
+}
+.home__steps{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+}
+.home__steps p{
+    color: #f5e610;
+    font-size: 1.3em;
+    width: 80%;
+}
