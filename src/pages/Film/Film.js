@@ -24,16 +24,7 @@ class Film extends Component{
         return (
             <div newtitle={this.props.newtitle}>
                 <main className="film">
-                    <article className="film__intro">
-                        <h1>
-                            {this.state.filmData.title}
-                        </h1>
-                        <h1>
-                            Episódio <span> {this.state.filmData.episode_id}</span>
-                        </h1>
-                    </article>
-                    <section className="film__description">
-                        
+                    <article className="film__description">
                         <p>
                             <h1>
                                 {this.state.filmData.title}
@@ -42,20 +33,33 @@ class Film extends Component{
                                 Episode {this.state.filmData.episode_id}
                             </h2>
                             {this.state.filmData.opening_crawl}
-                        
                         </p>
-                        
-                    </section>
+                    </article>
                     <section className="film__info">
-                        <p>
-                            Diretor: <span> {this.state.filmData.director}</span>
-                        </p>
-                        <p>
-                            Produtores: <span> {this.state.filmData.producer}</span>
-                        </p>
-                        <p>
-                            Data de Lançamento: <span> {this.state.filmData.release_date}</span>
-                        </p>
+                        <div>
+                            <h1>
+                                Informações do Filme
+                            </h1>
+                        </div>
+                        <div className="film__info-data">
+                            <p>
+                                Título: <span> {this.state.filmData.title}</span>
+                                
+                            </p>
+                            <p>
+                                Episódio: <span> {this.state.filmData.episode_id}</span>
+                            </p>
+                            <p>
+                                Diretor: <span> {this.state.filmData.director}</span>
+                            </p>
+                            <p>
+                                Produtores: <span> {this.state.filmData.producer}</span>
+                            </p>
+                            <p>
+                                Data de Lançamento: <span> {this.state.filmData.release_date}</span>
+                            </p>
+                        </div>
+                        
                     </section>  
                 </main>
             </div>
