@@ -27,3 +27,13 @@
     font-size: 1.3em;
     width: 80%;
 }
+.home__steps-search{
+    display: flex;
+}
+.home__steps-search button{
+    padding: 0.95rem;
+    margin: 0 0 1rem;
+    border: 1px solid white;
+    border-radius: 0 5px 5px 0;
+    background: black;
+}

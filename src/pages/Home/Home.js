@@ -7,9 +7,24 @@ import './Home.css';
 class Home extends Component{
     constructor (props) {
         super(props);
-        this.state = { film: true };
+        this.state = { film: false};
+        this.filmRef = React.createRef();
+        this.title = '';
     }
-     
+    sendData = (event) => {
+        event.preventDefault();
+        const filmTitle = this.filmRef.current;
+        const title = { title: filmTitle.getValue().split(" ").join("")}
+        
+        this.title = title;
+        
+        console.log(this.title)
+        this.changePage();
+    }
+    changePage = () => {
+        this.setState({film: true});
+    }
+
     render (){
         const film = this.state.film;
         return (
@@ -26,14 +41,17 @@ class Home extends Component{
                             <p>
                                 É só digitar o título do seu episódio favorito (em inglês) nessa barra:
                             </p>
-                            <SearchField placeholder="Ex: a new hope"/>
+                            <form onSubmit={this.sendData} className="home__steps-search">
+                                <SearchField id="search" type="text" name="search" ref={this.filmRef} placeholder="Ex: a new hope"/>
+                                <button ></button>
+                            </form>
                             <p>
                                 Ps: Ou você pode tentar usar a força...
                             </p>
                             
                         </section>  
                     </main>
-                            ) : <Film/>
+                            ) : <Film newtitle={this.title}/>
                 }
             </div>
         )

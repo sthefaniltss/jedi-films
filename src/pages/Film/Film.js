@@ -4,16 +4,21 @@ import './Film.css';
 class Film extends Component{
     constructor (props) {
         super(props);
-        this.state = { film: false };
+        this.state = { film: false, filmTitle: [] };
+    }
+
+    componentDidMount(){
+        this.setState({filmTitle: this.props.newtitle});
+
     }
      
     render (){
         return (
-            <div>
+            <div newtitle={this.props.newtitle}>
                 <main className="film">
                     <article className="film__intro">
                         <h1>
-                            Title
+                            {this.state.filmTitle.title}
                         </h1>
                         <h1>
                             Episódio: <span>episode_id</span>

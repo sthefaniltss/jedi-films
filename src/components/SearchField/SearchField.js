@@ -9,7 +9,7 @@ class SearchField extends Component {
         
     }
     getValue = () => {
-        return this.valor;
+        return this.newValue;
     }
 
     validate = (event) => {
@@ -17,6 +17,7 @@ class SearchField extends Component {
         const {value} = input;
         this.newValue = value;
         console.log(value)
+        console.log(this.newValue)
     }
     render(){
 
