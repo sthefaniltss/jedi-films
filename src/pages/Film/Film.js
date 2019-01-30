@@ -33,8 +33,15 @@ class Film extends Component{
                         </h1>
                     </article>
                     <section className="film__description">
+                        
                         <p>
-                        {this.state.filmData.opening_crawl}
+                            <h1>
+                                {this.state.filmData.title}
+                            </h1>
+                            <h2>
+                                Episode {this.state.filmData.episode_id}
+                            </h2>
+                            {this.state.filmData.opening_crawl}
                         
                         </p>
                         
