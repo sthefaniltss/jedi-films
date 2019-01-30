@@ -5,16 +5,20 @@ class Film extends Component{
     constructor (props) {
         super(props);
         this.state = { film: false, filmTitle: [], filmData: {} };
+        this.teste = '';
     }
 
     componentDidMount(){
-        this.setState({filmTitle: this.props.newtitle});
-        fetch(`https://swapi.co/api/people/?search=${this.state.filmTitle.title}`).then(response =>{ 
+        //this.setState({filmTitle: this.props.newtitle});
+        this.teste = this.props.newtitle;
+        this.search();
+    }
+    search = () =>{
+        fetch(`https://swapi.co/api/films/?search=${this.teste.title}`).then(response =>{ 
             return response.json();
         }).then(data => {
-            this.setState({filmData : data.results});
+            this.setState({filmData : data.results[0]});
         })
-       
     }
     render (){
         return (
@@ -25,25 +29,25 @@ class Film extends Component{
                             {this.state.filmData.title}
                         </h1>
                         <h1>
-                            Episódio: <span>episode_id</span>
+                            Episódio <span> {this.state.filmData.episode_id}</span>
                         </h1>
                     </article>
                     <section className="film__description">
                         <p>
-                            opening_crawl
+                        {this.state.filmData.opening_crawl}
                         
                         </p>
                         
                     </section>
                     <section className="film__info">
                         <p>
-                            Diretor: <span>director</span>
+                            Diretor: <span> {this.state.filmData.director}</span>
                         </p>
                         <p>
-                            Produtores: <span>producer</span>
+                            Produtores: <span> {this.state.filmData.producer}</span>
                         </p>
                         <p>
-                            Data de Lançamento: <span>release_date</span>
+                            Data de Lançamento: <span> {this.state.filmData.release_date}</span>
                         </p>
                     </section>  
                 </main>

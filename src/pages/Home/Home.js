@@ -14,7 +14,7 @@ class Home extends Component{
     sendData = (event) => {
         event.preventDefault();
         const filmTitle = this.filmRef.current;
-        const title = { title: filmTitle.getValue().split(" ").join("")}
+        const title = { title: filmTitle.getValue().trim()}
         
         this.title = title;
         
