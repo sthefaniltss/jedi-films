@@ -4,21 +4,25 @@ import './Film.css';
 class Film extends Component{
     constructor (props) {
         super(props);
-        this.state = { film: false, filmTitle: [] };
+        this.state = { film: false, filmTitle: [], filmData: {} };
     }
 
     componentDidMount(){
         this.setState({filmTitle: this.props.newtitle});
-
+        fetch(`https://swapi.co/api/people/?search=${this.state.filmTitle.title}`).then(response =>{ 
+            return response.json();
+        }).then(data => {
+            this.setState({filmData : data.results});
+        })
+       
     }
-     
     render (){
         return (
             <div newtitle={this.props.newtitle}>
                 <main className="film">
                     <article className="film__intro">
                         <h1>
-                            {this.state.filmTitle.title}
+                            {this.state.filmData.title}
                         </h1>
                         <h1>
                             Episódio: <span>episode_id</span>
