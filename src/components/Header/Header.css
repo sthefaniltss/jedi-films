@@ -1,9 +1,9 @@
 .header h1{
     font-family: 'Russo One', sans-serif;
-    font-size: 6em;
+    font-size: 3em;
     text-shadow: 4px 4px 4px rgb(54, 54, 54);
     text-transform: uppercase;
-    margin: 8px;
+    margin: 5px;
     color: #f5e610;
 }
 *:link{
@@ -22,5 +22,8 @@
 @media (min-width: 992px) {
     .header {
         padding: 30px 10%;
+    }
+    .header h1{
+        font-size: 6em;
     }
 }
