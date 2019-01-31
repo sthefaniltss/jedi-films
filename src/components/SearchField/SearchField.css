@@ -8,14 +8,14 @@
     padding: 0.3rem 2rem;
     margin: 0 0 1rem;
     border: 1px solid white;
-    border-radius: 5px;
+    border-radius: 5px 0 0 5px;
     background: white;
 }
 
 .search-field:focus {
     outline: none;
     border-color: white;
-    box-shadow: 0 0 2px white;
+    box-shadow: 0 0 2px 1.2px #f90606;
 }
 .search-field::placeholder{
     color: black;
