@@ -18,12 +18,18 @@
     background: #000000;
     
 }
+.logo{
+    width: 20%;
+}
 
 @media (min-width: 992px) {
     .header {
         padding: 30px 10%;
     }
     .header h1{
-        font-size: 6em;
+        font-size: 5em;
+    }
+    .logo{
+        width: 10%;
     }
 }
