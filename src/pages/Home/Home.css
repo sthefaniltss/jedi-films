@@ -45,9 +45,25 @@
 .home__steps-search button{
     padding: 0.95rem;
     margin: 0 0 1rem;
-    border: 1px solid #6d6c6c;
+    box-shadow: 4px 0.8px 8px  #f90606;
+    outline: none;
+    border: none;
     border-radius: 0 5px 5px 0;
-    background: #919191 url("./red-saber.svg") no-repeat center;
-    background-size: 20px;
+    background: transparent url("./red-saber-btn.svg") no-repeat center;
+    background-size: 30px;
 }
-
+.film{
+    background: black;
+}
+.film-btn{
+    margin: 0 0 30px 0;
+    padding: 40px;
+    background: transparent url("./green-saber-btn.svg") no-repeat center;
+    background-size: 50px;
+    box-shadow: 0.5px 0.8px 8px 0.2px #7ed63e;
+    outline: none;
+    border: none;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+}

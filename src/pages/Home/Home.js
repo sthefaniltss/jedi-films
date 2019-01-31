@@ -32,7 +32,7 @@ class Home extends Component{
         const film = this.state.film;
         return (
             <div>
-                <Header  onClick={this.reloadPage}/>
+                <Header  />
                 { !film ? (
                     <main className="home">
                         <article className="home__intro">
@@ -54,7 +54,11 @@ class Home extends Component{
                             
                         </section>  
                     </main>
-                            ) : <Film newtitle={this.title}/>
+                            ) : 
+                            <div className="film">
+                                <Film newtitle={this.title}/>
+                                <button className="film-btn" onClick={this.reloadPage}></button>
+                            </div>
                 }
             </div>
         )
