@@ -58,6 +58,9 @@
 .film__info p span {
     font-weight: initial;
 }
+.logo{
+    width: 20%;
+}
 @media (min-width: 992px) {
     .film__info p{
         width: 50%;

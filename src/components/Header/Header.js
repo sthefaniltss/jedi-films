@@ -4,16 +4,12 @@ import logo from './logo.svg'
 import './Header.css';
 
 class Header extends Component{
-    constructor (props) {
-        super(props);
-    }
-     
     render (){
         return (
             <header className="header">
                 <Link to="/">
                     <h1>Jedi Films Searcher </h1>
-                    <img className="logo" src={logo}/>
+                    <img className="logo" src={logo} alt="logo"/>
                 </Link>
             </header>
         )

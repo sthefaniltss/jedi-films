@@ -24,12 +24,15 @@ class Home extends Component{
     changePage = () => {
         this.setState({film: true});
     }
+    reloadPage = () => {
+        this.setState({film: false});
+    }
 
     render (){
         const film = this.state.film;
         return (
             <div>
-                <Header/>
+                <Header  onClick={this.reloadPage}/>
                 { !film ? (
                     <main className="home">
                         <article className="home__intro">
