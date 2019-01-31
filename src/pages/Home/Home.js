@@ -15,11 +15,9 @@ class Home extends Component{
         event.preventDefault();
         const filmTitle = this.filmRef.current;
         const title = { title: filmTitle.getValue().trim()}
-        
         this.title = title;
-        
-        console.log(this.title)
         this.changePage();
+        
     }
     changePage = () => {
         this.setState({film: true});

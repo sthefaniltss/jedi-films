@@ -1,15 +1,7 @@
 .film{
     background: black;
-    /* height: 100vh; */
     font-family: 'Pathway Gothic One', sans-serif;
 }
-/* .film__intro{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 70px 1rem;
-    overflow: hidden;
-} */
 .film__description{
     display: flex;
     flex-direction: column;
@@ -33,7 +25,6 @@
     text-transform: uppercase;
     margin: 5px;
 }
-
 .film__info{
     margin-top: 250px;
     display: flex;
@@ -65,9 +56,6 @@
     .film__info p{
         width: 50%;
     }
-    /* .film__description {
-        height: 130vh;
-    } */
     .film__description p{
         width: 60%;
         font-size: 2.8em;

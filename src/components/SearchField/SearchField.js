@@ -16,8 +16,6 @@ class SearchField extends Component {
         const input = event.target;
         const {value} = input;
         this.newValue = value;
-        console.log(value)
-        console.log(this.newValue)
     }
     render(){
 

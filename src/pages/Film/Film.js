@@ -5,16 +5,15 @@ class Film extends Component{
     constructor (props) {
         super(props);
         this.state = { film: false, filmTitle: [], filmData: {} };
-        this.teste = '';
+        this.newtitle = '';
     }
 
     componentDidMount(){
-        //this.setState({filmTitle: this.props.newtitle});
-        this.teste = this.props.newtitle;
+        this.newtitle = this.props.newtitle;
         this.search();
     }
     search = () =>{
-        fetch(`https://swapi.co/api/films/?search=${this.teste.title}`).then(response =>{ 
+        fetch(`https://swapi.co/api/films/?search=${this.newtitle.title}`).then(response =>{ 
             return response.json();
         }).then(data => {
             this.setState({filmData : data.results[0]});
