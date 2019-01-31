@@ -1,6 +1,6 @@
 .home{
     background: black;
-    height: 100vh;
+    height: 70vh;
     font-family: 'Pathway Gothic One', sans-serif;
 }
 .home__intro{
@@ -24,9 +24,20 @@
     justify-content: center; 
 }
 .home__steps p{
-    color: #f5e610;
+    color: white;
+    font-weight: bold;
     font-size: 1.3em;
     width: 80%;
+}
+.home__steps p:nth-child(3){
+    color: white;
+    font-weight: 300;
+    width: 25%;
+    height: 35px;
+    background: url("./green-bg.svg");
+    background-size: cover;
+    text-shadow: 4px 4px 4px rgb(0, 0, 0);
+
 }
 .home__steps-search{
     display: flex;
@@ -36,5 +47,6 @@
     margin: 0 0 1rem;
     border: 1px solid white;
     border-radius: 0 5px 5px 0;
-    background: black;
+    background: black url("./r2d2.svg") no-repeat center;
+    background-size: 25px;
 }
